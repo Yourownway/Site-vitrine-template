@@ -1,6 +1,7 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+
   font: 112.5%/1.45em georgia, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
@@ -18,10 +19,10 @@ body {
   font-kerning: normal;
   background: url("../images/old-paper.jpg");
   background-position: top;
-  background-size: 100%;
-  // background-repeat: no-repeat;
-
   background-size: cover;
+  background-repeat: no-repeat;
+
+  // background-size: cover;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -613,13 +614,19 @@ pre tt:after {
   }
 }
 
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
 .section {
   // background-image: url("../images/border.svg");
 
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 80vh;
+  height: 140vh;
 
   margin: 0 0 300px 0;
   padding: 5px;
@@ -632,6 +639,9 @@ pre tt:after {
     &__img {
       height: 200px;
       float: right;
+      &:hover {
+        filter: sepia(1);
+      }
     }
   }
 }
