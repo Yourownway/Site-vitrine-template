@@ -1,0 +1,24 @@
+.home {
+  height: 100vh;
+  &__h2 {
+    text-align: center;
+    color: rgba($color: #000000, $alpha: 0.85);
+    text-decoration: underline black;
+  }
+
+  &__social {
+    display: flex;
+
+    width: 30vw;
+    margin: auto;
+    justify-content: space-between;
+
+    &__fb {
+      height: 50px;
+      padding: 3.5px;
+    }
+    &__insta {
+      height: 50px;
+    }
+  }
+}
