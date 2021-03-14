@@ -4,10 +4,10 @@ import "./header.scss"
 export default function NavMobile() {
   const [hash, setHash] = useState(null)
   useEffect(() => {
+    if (window.location.pathname === "/a%20propos") return setHash("A propos")
     let path = window.location.pathname.split("/")
-    if (!path) {
-      return setHash(null)
-    }
+    if (!path) return setHash(null)
+
     path = path[1].charAt(0).toUpperCase() + path[1].slice(1)
     console.log("path", path)
     setHash(path)

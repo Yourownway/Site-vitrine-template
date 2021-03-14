@@ -10,12 +10,21 @@ export default function Home() {
       <div className="home__follow">
         <h2 className="home__h2">Suivez moi sur :</h2>
         <div className="home__social">
-          <img
-            className="home__social__insta"
-            src={instagram}
-            alt="instagram"
-          ></img>
-          <img className="home__social__fb" src={facebook} alt="facebook"></img>
+          <a href="https://www.instagram.com/les_guidances_de_lucie">
+            {" "}
+            <img
+              className="home__social__insta"
+              src={instagram}
+              alt="instagram"
+            ></img>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100064571690713">
+            <img
+              className="home__social__fb"
+              src={facebook}
+              alt="facebook"
+            ></img>
+          </a>
         </div>
       </div>
     </div>

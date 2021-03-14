@@ -23,7 +23,8 @@ export default function Burger() {
               className="menu__list__border top"
               alt="border"
             ></img>
-            <Link to="/accueil">Accueil</Link>
+            <Link to="/">Accueil</Link>
+            <Link to="/a propos">À propos</Link>
             <Link to="/blog">Blog</Link>
             <Link to="/creations">Mes Créations</Link>
             <Link to="/tarif">Tarif</Link>

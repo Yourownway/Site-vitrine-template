@@ -1,11 +1,16 @@
 .home {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   &__h2 {
     text-align: center;
     color: rgba($color: #000000, $alpha: 0.85);
     text-decoration: underline black;
   }
-
+  &__follow {
+    height: 23vh;
+  }
   &__social {
     display: flex;
 
